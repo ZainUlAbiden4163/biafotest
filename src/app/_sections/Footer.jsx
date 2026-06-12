@@ -1,0 +1,133 @@
+import { CERTIFICATIONS, FOOTER_LINKS, SOCIALS } from "../_constants/Constants";
+import Image from "next/image";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.18, duration: 0.8, ease: "easeOut" },
+  }),
+};
+
+function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    // ✅ Transparent background — SplineElement ke blobs dikhenge through
+    <footer className="relative bg-(--primary-dark) border-white/10 border-t overflow-hidden text-(--color-offWhite)">
+      <div className="relative mx-auto px-6 pt-16 pb-8 max-w-7xl">
+        {/* TOP SECTION */}
+        <div className="gap-12 grid grid-cols-1 lg:grid-cols-12 mb-16">
+          {/* Brand */}
+          <div className="lg:col-span-4">
+            <div className="flex items-center gap-2 mb-4">
+              <Image
+                src="/Logo.svg"
+                alt="Biafo Logo"
+                width={130}
+                height={130}
+              />
+            </div>
+
+            <p className="mb-6 max-w-xs text-white/50 text-sm leading-relaxed">
+              Moving healthcare from reactive practice to predictive precision
+              through AI, blockchain, and digital twins.
+            </p>
+
+            <div className="flex items-center gap-3">
+              {SOCIALS.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="flex justify-center items-center bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.18)] border border-white/10 hover:border-white/25 rounded-full w-9 h-9 text-white/60 hover:text-white transition-all duration-200"
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Links */}
+          <div className="lg:col-span-5">
+            {Object.entries(FOOTER_LINKS).map(([category, links], colIdx) => (
+              <div key={category}>
+                <ul className="flex gap-3">
+                  {links.map((link) => (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        className="hover:text-(--color-offWhite) text-(--color-gray) text-sm transition-colors duration-200"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Newsletter */}
+          <div className="lg:col-span-3">
+            <div className="w-fit">
+              <h4 className="mb-2 font-semibold text-white/40 text-xs uppercase tracking-widest">
+                Stay Updated
+              </h4>
+            </div>
+
+            <p className="mb-4 text-white/50 text-sm">
+              Get the latest from Biafo — breakthroughs, partnerships, and
+              product updates.
+            </p>
+
+            <div className="flex flex-col gap-2">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                className="bg-(--color-secondary-btn) px-4 py-3 border-2 border-(--color-gray)/20 focus:border-(--color-cyan) rounded-xl outline-none  placeholder:text-(--color-gray)/80 text-sm transition-colors duration-200"
+              />
+
+              <button className="flex justify-center items-center gap-2 bg-(--color-cyan)/50 rounded-full disabled:opacity-60 px-8 py-3 hover:bg-(--color-cyan)  font-bold  text-sm hover:scale-[1.02] disabled:scale-100 transition-all duration-300 disabled:cursor-not-allowed text-(--primary-dark) cursor-pointer">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="bg-linear-to-r from-transparent via-white/15 to-transparent mb-8 w-full h-px" />
+
+        {/* CERTIFICATIONS */}
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
+          {CERTIFICATIONS.map((cert) => (
+            <div
+              key={cert.label}
+              className="flex items-center gap-2 bg-[rgba(255,255,255,0.06)] px-4 py-2 border border-white/10 rounded-full"
+            >
+              <span className="font-medium text-white/50 text-xs">
+                {cert.label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* DIVIDER */}
+        <div className="bg-linear-to-r from-transparent via-white/10 to-transparent mb-6 w-full h-px" />
+
+        {/* BOTTOM */}
+        <div className="flex md:flex-row flex-col justify-between items-center gap-4 text-white/30 text-xs">
+          <p>© {currentYear} Biafo Technologies. All rights reserved.</p>
+
+          <p className="flex items-center gap-1">
+            Built with precision for the future of healthcare
+            <span className="text-(--color-cyan)"> ♥</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
