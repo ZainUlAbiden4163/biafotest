@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CERTIFICATIONS, FOOTER_LINKS, SOCIALS } from "../_constants/Constants";
 import Image from "next/image";
 
@@ -50,8 +51,8 @@ function Footer() {
           </div>
 
           {/* Links */}
-          <div className="lg:col-span-5">
-            {Object.entries(FOOTER_LINKS).map(([category, links], colIdx) => (
+          <div className="lg:col-span-4 grid lg:grid-cols-4 grid-cols-1 gap-8">
+            {/* {Object.entries(FOOTER_LINKS).map(([category, links], colIdx) => (
               <div key={category}>
                 <ul className="flex gap-3">
                   {links.map((link) => (
@@ -66,7 +67,82 @@ function Footer() {
                   ))}
                 </ul>
               </div>
-            ))}
+            ))} */}
+            <div className="">
+              <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Company</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/about">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">About</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Platform</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Contact</p>
+                  </Link>
+                </li>
+
+              </ul>
+            </div>
+            <div className="">
+              <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Solutions</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/about">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">AI Diagnostics</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Digital Twins</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Virtual Trials</p>
+                  </Link>
+                </li>
+
+              </ul>
+            </div>
+            <div className="">
+              <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Resources</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/about">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Security</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Compliance</p>
+                  </Link>
+                </li>
+
+              </ul>
+            </div>
+            <div className="">
+              <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Legal</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/about">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Privacy Policy</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Terms</p>
+                  </Link>
+                </li>
+
+
+              </ul>
+            </div>
           </div>
 
           {/* Newsletter */}
@@ -117,13 +193,8 @@ function Footer() {
         <div className="bg-linear-to-r from-transparent via-white/10 to-transparent mb-6 w-full h-px" />
 
         {/* BOTTOM */}
-        <div className="flex md:flex-row flex-col justify-between items-center gap-4 text-white/30 text-xs">
-          <p>© {currentYear} Biafo Technologies. All rights reserved.</p>
-
-          <p className="flex items-center gap-1">
-            Built with precision for the future of healthcare
-            <span className="text-(--color-cyan)"> ♥</span>
-          </p>
+        <div className="flex md:flex-row flex-col justify-center items-center gap-4 text-white/30 text-xs">
+          <p>© {currentYear} Biafo. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -135,15 +135,11 @@ export default function SectionPlatformStack4() {
         </p>
       </div>
 
-      {/* ── Pyramid — strictly centred ── */}
-      <div className="relative z-10 w-full flex flex-col items-center gap-4">
-
-        {/* Outer wrapper: sets max-width and centres it */}
-        <div
-          className="relative mx-auto w-full"
-          style={{ maxWidth: 760 }}
-        >
-          {/* ── Layer buttons (stacked, no gap → mathematically flush) ── */}
+      {/* ══════════════════════════════════════════
+           DESKTOP: Pyramid (md and above)
+          ══════════════════════════════════════════ */}
+      <div className="relative z-10 w-full flex-col items-center gap-4 hidden md:flex">
+        <div className="relative mx-auto w-full" style={{ maxWidth: 760 }}>
           <div className="flex flex-col" style={{ gap: 0 }}>
             {LAYERS.map((layer, index) => (
               <button
@@ -160,9 +156,7 @@ export default function SectionPlatformStack4() {
                 }}
                 className="relative w-full cursor-pointer focus:outline-none"
               >
-                {/* Centered row: badge + label */}
                 <div className="absolute inset-0 flex items-center justify-center gap-2 sm:gap-3">
-                  {/* Number badge */}
                   <span
                     style={{
                       border: `1px solid ${activeLayer === layer.id ? "rgba(49,216,213,0.9)" : "rgba(49,216,213,0.55)"}`,
@@ -170,19 +164,17 @@ export default function SectionPlatformStack4() {
                       background: activeLayer === layer.id ? "rgba(49,216,213,0.22)" : "transparent",
                       transition: "all 0.28s ease",
                     }}
-                    className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold"
+                    className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
                   >
                     {layer.id}
                   </span>
-
-                  {/* Label — omit for layer 0 (only ~10 % visible width) */}
                   {index > 0 && (
                     <span
                       style={{
                         color: activeLayer === layer.id ? "#f5f7fa" : "rgba(245,247,250,0.78)",
                         transition: "color 0.28s ease",
                       }}
-                      className="text-xs sm:text-sm md:text-base font-semibold whitespace-nowrap"
+                      className="text-sm md:text-base font-semibold whitespace-nowrap"
                     >
                       {layer.label}
                     </span>
@@ -192,21 +184,6 @@ export default function SectionPlatformStack4() {
             ))}
           </div>
 
-          {/* ── SVG triangle outline + inner dividers ──
-              viewBox is square 0-100 × 0-100, stretched via preserveAspectRatio="none"
-              to the exact pixel dimensions of the pyramid stack.
-
-              Outer triangle vertex:
-                top    : (50, 0)   ← centre of layer-0 top edge
-                bot-L  : ( 0,100) ← layer-4 bottom-left
-                bot-R  : (100,100) ← layer-4 bottom-right
-
-              Inner dividers at y=20,40,60,80 with x matching the slope:
-                y=20: x from 40 to 60
-                y=40: x from 30 to 70
-                y=60: x from 20 to 80
-                y=80: x from 10 to 90
-          ── */}
           <svg
             aria-hidden
             className="pointer-events-none absolute inset-0 w-full h-full"
@@ -214,33 +191,159 @@ export default function SectionPlatformStack4() {
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* Outer triangle */}
-            <polygon
-              points="50,0 0,100 100,100"
-              fill="none"
-              stroke="rgba(49,216,213,0.60)"
-              strokeWidth="0.45"
-            />
-            {/* Inner horizontal dividers */}
+            <polygon points="50,0 0,100 100,100" fill="none" stroke="rgba(49,216,213,0.60)" strokeWidth="0.45" />
             <line x1="40" y1="20" x2="60" y2="20" stroke="rgba(49,216,213,0.28)" strokeWidth="0.3" />
             <line x1="30" y1="40" x2="70" y2="40" stroke="rgba(49,216,213,0.28)" strokeWidth="0.3" />
             <line x1="20" y1="60" x2="80" y2="60" stroke="rgba(49,216,213,0.28)" strokeWidth="0.3" />
             <line x1="10" y1="80" x2="90" y2="80" stroke="rgba(49,216,213,0.28)" strokeWidth="0.3" />
           </svg>
         </div>
-
-        {/* Base caption */}
         <p className="text-[#31d8d5]/40 text-[11px] tracking-[0.18em] uppercase mt-1">
           ▲ Foundation — Base of the Intelligence Stack
         </p>
       </div>
 
-      {/* ── Interaction hint ── */}
+      {/* ── Desktop interaction hint ── */}
       {!activeLayer && (
-        <p className="relative z-10 -mt-6 text-[#d1d7df]/35 text-sm animate-pulse">
+        <p className="relative z-10 -mt-6 text-[#d1d7df]/35 text-sm animate-pulse hidden md:block">
           Click any layer to explore its role
         </p>
       )}
+
+      {/* ══════════════════════════════════════════
+           MOBILE: Vertical Timeline (below md)
+          ══════════════════════════════════════════ */}
+      <div className="relative z-10 w-full flex flex-col md:hidden">
+        {/* Vertical spine line */}
+        <div
+          className="absolute left-[27px] top-0 bottom-0 w-px"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 0%, rgba(49,216,213,0.55) 8%, rgba(49,216,213,0.55) 92%, transparent 100%)",
+          }}
+          aria-hidden
+        />
+
+        <div className="flex flex-col gap-0">
+          {LAYERS.map((layer, index) => {
+            const isOpen = activeLayer === layer.id;
+            return (
+              <div key={layer.id} className="relative">
+                {/* Row: node + header */}
+                <button
+                  onClick={() => handleClick(layer.id)}
+                  aria-expanded={isOpen}
+                  aria-label={`${isOpen ? "Collapse" : "Expand"} ${layer.label}`}
+                  className="w-full flex items-start gap-4 py-4 text-left focus:outline-none group"
+                >
+                  {/* Node circle — sits on the spine */}
+                  <div
+                    className="relative flex-shrink-0 z-10 w-[54px] flex justify-center"
+                  >
+                    <span
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300"
+                      style={{
+                        border: `2px solid ${isOpen ? "#31d8d5" : "rgba(49,216,213,0.45)"}`,
+                        color: isOpen ? "#121828" : "#31d8d5",
+                        background: isOpen
+                          ? "#31d8d5"
+                          : "rgba(18,24,40,0.95)",
+                        boxShadow: isOpen
+                          ? "0 0 18px rgba(49,216,213,0.55)"
+                          : "none",
+                        transition: "all 0.3s ease",
+                      }}
+                    >
+                      {layer.id}
+                    </span>
+                  </div>
+
+                  {/* Header text */}
+                  <div className="flex-1 min-w-0 pt-2">
+                    <div className="flex items-center justify-between gap-2">
+                      <div>
+                        <p
+                          className="text-[10px] font-semibold tracking-[0.16em] uppercase mb-0.5"
+                          style={{ color: "rgba(49,216,213,0.65)" }}
+                        >
+                          {layer.sublabel}
+                        </p>
+                        <h3
+                          className="font-bold text-base transition-colors duration-300"
+                          style={{ color: isOpen ? "#31d8d5" : "#f5f7fa" }}
+                        >
+                          {layer.label}
+                        </h3>
+                      </div>
+                      {/* Chevron */}
+                      <svg
+                        className="flex-shrink-0 w-4 h-4 transition-transform duration-300"
+                        style={{
+                          color: isOpen ? "#31d8d5" : "rgba(49,216,213,0.45)",
+                          transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+                        }}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.5}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+
+                {/* Expandable description */}
+                <div
+                  className="overflow-hidden transition-all duration-400 ease-in-out"
+                  style={{
+                    maxHeight: isOpen ? "200px" : "0px",
+                    opacity: isOpen ? 1 : 0,
+                    transition: "max-height 0.38s ease, opacity 0.28s ease",
+                  }}
+                >
+                  <div
+                    className="ml-[54px] mb-4 rounded-xl px-4 py-3"
+                    style={{
+                      border: "1px solid rgba(49,216,213,0.22)",
+                      background:
+                        "linear-gradient(135deg, rgba(49,216,213,0.08) 0%, rgba(30,44,70,0.40) 100%)",
+                    }}
+                  >
+                    <p className="text-[#d1d7df] text-sm leading-relaxed">
+                      {layer.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Separator between items (not after last) */}
+                {index < LAYERS.length - 1 && (
+                  <div
+                    className="ml-[54px] h-px"
+                    style={{ background: "rgba(49,216,213,0.08)" }}
+                  />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Mobile foundation note */}
+        <div
+          className="mt-4 flex items-center gap-3 rounded-xl px-4 py-3"
+          style={{
+            border: "1px solid rgba(49,216,213,0.20)",
+            background: "rgba(49,216,213,0.06)",
+          }}
+        >
+          <svg className="flex-shrink-0 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="#31d8d5" strokeWidth={1.8}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.955 11.955 0 003 12c0 5.591 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.25-8.25-3.285z" />
+          </svg>
+          <p className="text-[11px] text-[#31d8d5]/60 tracking-[0.14em] uppercase font-semibold">
+            Foundation — Base of the Intelligence Stack
+          </p>
+        </div>
+      </div>
 
       {/* ── Detail panel ── */}
       <div className="relative z-10 w-full max-w-2xl">

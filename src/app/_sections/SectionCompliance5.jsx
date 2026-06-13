@@ -57,7 +57,9 @@ function SectionCompliance5() {
             <p className="text-base">Immutable Audit Foundation</p>
           </div>
         </div>
-
+        <div className="w-2/3 m-auto">
+          <p className="text-center max-md:text-base md:text-xl text-(--color-cyan)">This layer underpins every part of the Biafo platform — ensuring trust is embedded, not added. </p>
+        </div>
       </main>
     </section>
   );
