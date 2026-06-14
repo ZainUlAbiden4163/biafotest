@@ -39,32 +39,17 @@ function SectionProblem1() {
         </div>
         <div className="flex flex-col gap-4 max-md:text-center text-(--color-offWhite) text-xl">
           <p>
-            Healthcare today is reactive, imprecise, and built for populations
-            rather than people. Patient data exists in abundance, yet it remains
-            fragmented across disconnected systems, underused by clinicians, and
-            largely inaccessible to the individuals it belongs to.
+            The challenge in healthcare is not data. It is the absence of systems that can transform that data into
+            prediction, simulation, and action.
           </p>
 
           <p>
-            The consequences are significant. Clinical trials take years and
-            frequently fail. Treatments are still designed around the average
-            patient, despite the fact that no two patients are the same. Most
-            people have little visibility into their own health records, limited
-            control over who accesses their data, and no reliable way to carry
-            their health history forward across time.
+            Biafo solves this by building the infrastructure layer that connects diagnostics, patient data, and
+            predictive modeling into a continuous intelligence system, where data improves models, models power
+            simulations, and simulations accelerate discovery.
           </p>
 
-          <p>
-            The problem, therefore, is not a shortage of data. It is the absence
-            of intelligent systems capable of transforming that data into
-            something actionable, personal, and certain.
-          </p>
 
-          <p>
-            That is precisely what
-            <span className="text-(--color-cyan)"> Biafo </span>
-            is built to do.
-          </p>
           <div className="w-fit">
             <a
               href="#platform"

@@ -8,7 +8,9 @@ function SectionSystemFlow() {
           From Data to Prediction to
           <span className="text-(--color-cyan)">{" "}Simulation</span>
         </h1>
-        <h3 className="text-(--color-cyan) font-medium text-center text-xl mt-4">A continuous intelligence pipeline from patient data to predictive simulation and clinical outcomes. </h3>
+        <h3 className="text-(--color-cyan) font-medium text-center text-xl mt-4">How Biafo transforms fragmented patient data into predictive models, digital twins,
+          and virtual clinical trials through a single, continuous learning infrastructure.</h3>
+        <h3 className="text-white font-medium text-center text-xl mt-4">A continuous intelligence pipeline from patient data to predictive simulation and clinical outcomes. </h3>
       </div>
       <main className="w-full space-y-5">
         <div className="space-y-5 text-xl md:text-xl text-(--color-offWhite)/80 py-10 px-8 m-auto max-sm:text-center">
@@ -41,8 +43,8 @@ function SectionSystemFlow() {
           <div className="space-y-4 flex  max-md:flex-col justify-between items-center gap-4">
             <h1 className="rounded-full border border-1 border-(--color-cyan)/50 text-(--color-cyan) w-10 h-10 flex justify-center items-center text-base">4</h1>
             <div className=" w-[90%] bg-(--primary-light)/25 rounded-lg md:h-30 border-1 border-(--color-cyan)/50 p-4">
-              <h2 className="text-(--color-cyan) font-bold mb-1">Patient :</h2>
-              <p>Source of truth clinical records, genomics, wearables, and real-world data.</p>
+              <h2 className="text-(--color-cyan) font-bold mb-1">Digital Twins:</h2>
+              <p>Living patient models that simulate outcomes before interventions occur.</p>
             </div>
           </div>
           <div className="h-10 w-[1px] bg-(--color-cyan)/50  ml-5 max-md:hidden"></div>
@@ -50,8 +52,9 @@ function SectionSystemFlow() {
           <div className="space-y-4 flex  max-md:flex-col justify-between items-center gap-4">
             <h1 className="rounded-full border border-1 border-(--color-cyan)/50 text-(--color-cyan) w-10 h-10 flex justify-center items-center text-base">5</h1>
             <div className=" w-[90%] bg-(--primary-light)/25 rounded-lg md:h-30 border-1 border-(--color-cyan)/50 p-4">
-              <h2 className="text-(--color-cyan) font-bold mb-1">Patient :</h2>
-              <p>Source of truth clinical records, genomics, wearables, and real-world data.</p>
+              <h2 className="text-(--color-cyan) font-bold mb-1">Virtual Clinical Trials:</h2>
+              <p>Scalable trial environments powered by predictive models and synthetic patient
+                populations.</p>
             </div>
           </div>
         </div>

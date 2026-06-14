@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About Us", id: 1, href: "/aboutus" },
-  { name: "Platform", id: 2, href: "/platform" },
+  { name: "Platform", id: 2, href: "#platform-stack" },
   { name: "Solutions", id: 3, href: "/solutions" },
   { name: "Contact", id: 4, href: "/contactus" },
   { name: "Career", id: 5, href: "/career" },
@@ -16,13 +16,13 @@ export const problemsContent = [
   },
   {
     id: 2,
-    heading: "$2.6 Billion",
+    heading: "$2.6 B",
     label: "Average Cost Per Drug",
     description: "average R&D cost per approved drug",
   },
   {
     id: 3,
-    heading: "Less than 11%",
+    heading: "<11%",
     label: "Success Rate",
     description: "of drug candidates ever reach patients",
   },

@@ -2,34 +2,6 @@
 
 import { useState } from "react";
 
-/**
- * PYRAMID GEOMETRY
- * ─────────────────────────────────────────────────────────────────
- * The pyramid is composed of 5 stacked div layers (index 0 = top).
- * Each layer occupies the full width of the container and has a
- * fixed height.  A CSS clip-path trims each div into a trapezoid:
- *
- *   Layer i  →  clip-path: polygon(TL% 0%, TR% 0%, BR% 100%, BL% 100%)
- *
- *   where:
- *     TL = 50 − i×10       (top-left  x, as % of container width)
- *     TR = 50 + i×10       (top-right x)
- *     BL = 50 − (i+1)×10  (bottom-left  x)
- *     BR = 50 + (i+1)×10  (bottom-right x)
- *
- * i = 0 → tip   : polygon(50% 0%, 50% 0%, 60% 100%, 40% 100%)
- * i = 1         : polygon(40% 0%, 60% 0%, 70% 100%, 30% 100%)
- * i = 2         : polygon(30% 0%, 70% 0%, 80% 100%, 20% 100%)
- * i = 3         : polygon(20% 0%, 80% 0%, 90% 100%, 10% 100%)
- * i = 4 → base  : polygon(10% 0%, 90% 0%,100% 100%,  0% 100%)
- *
- * Adjacent layers share the same edge → perfect geometric triangle.
- *
- * An SVG (preserveAspectRatio="none") is absolutely overlaid on the
- * stack and draws the outer triangle outline + inner divider lines
- * at y=20, 40, 60, 80 in viewBox space (each layer = 20 viewBox units).
- * ─────────────────────────────────────────────────────────────────
- */
 
 function getClipPath(i) {
   const tl = 50 - i * 10;
@@ -42,7 +14,8 @@ function getClipPath(i) {
 const LAYERS = [
   {
     id: 1,
-    label: "Virtual Trials",
+    label: "Virtual",
+    label2: "Trials",
     sublabel: "Layer 1 — Top",
     description:
       "Accelerated, compliant clinical trials run on synthetic and real cohorts — dramatically compressing timelines and cost while maintaining regulatory integrity.",
@@ -78,9 +51,9 @@ const LAYERS = [
 ];
 
 /* Background fill colour for each layer (idle / active) */
-const BG_IDLE   = ["rgba(49,216,213,0.36)","rgba(49,216,213,0.27)","rgba(49,216,213,0.19)","rgba(49,216,213,0.13)","rgba(49,216,213,0.08)"];
-const BG_ACTIVE = ["rgba(49,216,213,0.60)","rgba(49,216,213,0.52)","rgba(49,216,213,0.44)","rgba(49,216,213,0.38)","rgba(49,216,213,0.32)"];
-const BG_HOVER  = ["rgba(49,216,213,0.46)","rgba(49,216,213,0.37)","rgba(49,216,213,0.29)","rgba(49,216,213,0.21)","rgba(49,216,213,0.16)"];
+const BG_IDLE = ["rgba(49,216,213,0.36)", "rgba(49,216,213,0.27)", "rgba(49,216,213,0.19)", "rgba(49,216,213,0.13)", "rgba(49,216,213,0.08)"];
+const BG_ACTIVE = ["rgba(49,216,213,0.60)", "rgba(49,216,213,0.52)", "rgba(49,216,213,0.44)", "rgba(49,216,213,0.38)", "rgba(49,216,213,0.32)"];
+const BG_HOVER = ["rgba(49,216,213,0.46)", "rgba(49,216,213,0.37)", "rgba(49,216,213,0.29)", "rgba(49,216,213,0.21)", "rgba(49,216,213,0.16)"];
 
 /* Each layer is LAYER_H px tall → total pyramid = 5 × LAYER_H */
 const LAYER_H = 88;
@@ -123,15 +96,8 @@ export default function SectionPlatformStack4() {
           <span className="text-[#31d8d5]">Healthcare Intelligence Platform</span>
         </h1>
         <p className="text-[#d1d7df] text-base md:text-lg max-w-2xl leading-relaxed">
-          A layered system architecture{" "}
-          <span className="font-semibold text-[#f5f7fa] underline underline-offset-4 decoration-[#31d8d5]/50">
-            purpose-built
-          </span>{" "}
-          for healthcare intelligence at{" "}
-          <span className="font-semibold text-[#f5f7fa] underline underline-offset-4 decoration-[#31d8d5]/50">
-            institutional
-          </span>{" "}
-          scale.
+          A purpose-built layered architecture for institutional scale, designed to compound through
+          diagnostics, predictive modeling, digital twins, and virtual clinical trials.
         </p>
       </div>
 
@@ -157,7 +123,7 @@ export default function SectionPlatformStack4() {
                 className="relative w-full cursor-pointer focus:outline-none"
               >
                 <div className="absolute inset-0 flex items-center justify-center gap-2 sm:gap-3">
-                  <span
+                  {/* <span
                     style={{
                       border: `1px solid ${activeLayer === layer.id ? "rgba(49,216,213,0.9)" : "rgba(49,216,213,0.55)"}`,
                       color: activeLayer === layer.id ? "#31d8d5" : "rgba(49,216,213,0.8)",
@@ -166,17 +132,18 @@ export default function SectionPlatformStack4() {
                     }}
                     className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold"
                   >
-                    {layer.id}
-                  </span>
-                  {index > 0 && (
+
+                  </span> */}
+                  {index >= 0 && (
                     <span
                       style={{
                         color: activeLayer === layer.id ? "#f5f7fa" : "rgba(245,247,250,0.78)",
                         transition: "color 0.28s ease",
                       }}
-                      className="text-sm md:text-base font-semibold whitespace-nowrap"
+                      className="text-sm md:text-base font-semibold whitespace-nowrap flex flex-col mt-5"
                     >
-                      {layer.label}
+                      <span className="text-sm md:font-medium">{layer.label}</span>
+                      {layer.label2 && <span className="md:font-normal text-sm md:text-base opacity-90"> {layer.label2}</span>}
                     </span>
                   )}
                 </div>
@@ -465,18 +432,17 @@ export default function SectionPlatformStack4() {
           accurate predictive models and scalable virtual trials.
         </p>
         <p>
-          As the platform scales,{" "}
-          <span className="text-[#31d8d5] font-semibold">Biafo</span> fundamentally improves the economics of drug discovery.
+          As the platform scales, Biafo fundamentally improves the economics of drug development.
         </p>
       </div>
 
       {/* ── Bottom metrics strip ── */}
       <div className="relative z-10 w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4">
         {[
-          { value: "5",    label: "Intelligence Layers" },
+          { value: "5", label: "Intelligence Layers" },
           { value: "100%", label: "HIPAA / GDPR Compliant" },
-          { value: "∞",    label: "Continuous Learning" },
-          { value: "1",    label: "Unified Platform" },
+          { value: "∞", label: "Continuous Learning" },
+          { value: "1", label: "Unified Platform" },
         ].map((stat) => (
           <div
             key={stat.label}

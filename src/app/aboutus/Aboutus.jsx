@@ -16,7 +16,7 @@ function AboutUsPage() {
                 </div>
 
                 <div className="m-auto w-fit">
-                    <h1 className="text-(--color-cyan)  text-2xl md:text-3xl lg:text-4xl">
+                    <h1 className="text-(--color-cyan)  text-xl">
                         Building the healthcare intelligence infrastructure layer for regulated, data-driven
                         medicine.
                     </h1>
@@ -24,7 +24,7 @@ function AboutUsPage() {
             </div>
             <div className="space-y-4 lg:spacee-y-8">
                 <div className="">
-                    <div className="text-2xl flex flex-col gap-4 " >
+                    <div className="text-xl flex flex-col gap-4 " >
                         <p>Biafo is building the infrastructure layer for healthcare intelligence.</p>
                         <p>We transform fragmented patient data into predictive models, patient digital twins, and virtual clinical trials, secured by a compliant and auditable foundation.</p>
                         <p>Our platform enables healthcare providers, researchers, and pharmaceutical organizations to accelerate discovery, improve patient outcomes, and reduce development risk across the healthcare ecosystem.</p>
@@ -35,18 +35,18 @@ function AboutUsPage() {
                 <h2 className="text-center  font-bold text-2xl md:text-3xl lg:text-4xl text-(--color-cyan)">Platform Foundation</h2>
                 <div className="">
                     <div className="">
-                        <div className="flex gap-6 text-2xl" >
+                        <div className="flex gap-6 text-xl" >
                             <div className="flex flex-col gap-2 px-8 py-6 border-(--color-cyan) border-1 rounded-2xl">
                                 <h3 className="text-(--color-cyan) font-bold text-2xl">Regulated Healthcare</h3>
                                 <p>Built for strict compliance with global healthcare data standards, ensuring data integrity, security, and full auditability across every layer of the platform.</p>
                             </div>
                             <div className="flex flex-col gap-2 px-8 py-6 border-(--color-cyan) border-1 rounded-2xl" >
-                                <h3 className="text-(--color-cyan) font-bold text-2xl">Data Security</h3>
-                                <p>Uses blockchain and cryptographic methods to secure patient data, ensuring immutability, privacy, and patient control over information access.</p>
+                                <h3 className="text-(--color-cyan) font-bold text-2xl">Institutional Scale</h3>
+                                <p>Architected to operate across large healthcare systems and research networks, with enterprise-level performance, healthcare interoperability, and deep integration into existing clinical data infrastructure.</p>
                             </div>
                             <div className="flex flex-col gap-2 px-8 py-6 border-(--color-cyan) border-1 rounded-2xl">
-                                <h3 className="text-(--color-cyan) font-bold text-2xl">AI-Powered</h3>
-                                <p>Leverages advanced AI models to analyze complex biological data, generate predictive insights, and create digital twins for personalized treatment strategies.</p>
+                                <h3 className="text-(--color-cyan) font-bold text-2xl">Predictive Medicine</h3>
+                                <p>Clinical, genomic, imaging, and real-world data transformed into predictive models that enable earlier intervention, more accurate diagnoses, and better outcomes.</p>
                             </div>
                         </div>
                     </div>
