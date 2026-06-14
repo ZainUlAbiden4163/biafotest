@@ -50,14 +50,6 @@ function SectionProblem1() {
           </p>
 
 
-          <div className="w-fit">
-            <a
-              href="#platform"
-              className="bg-(--color-secondary-btn) px-2.5 md:px-4 py-1.5 md:py-2 rounded-full text-(--color-offWhite) border border-(--color-gray) cursor-pointer flex gap-1 items-center"
-            >
-              Our Platform <GoArrowRight />
-            </a>
-          </div>
         </div>
       </main>
     </section>

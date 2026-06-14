@@ -145,31 +145,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Newsletter */}
-          <div className="lg:col-span-3">
-            <div className="w-fit">
-              <h4 className="mb-2 font-semibold text-white/40 text-xs uppercase tracking-widest">
-                Stay Updated
-              </h4>
-            </div>
-
-            <p className="mb-4 text-white/50 text-sm">
-              Get the latest from Biafo — breakthroughs, partnerships, and
-              product updates.
-            </p>
-
-            <div className="flex flex-col gap-2">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="bg-(--color-secondary-btn) px-4 py-3 border-2 border-(--color-gray)/20 focus:border-(--color-cyan) rounded-xl outline-none  placeholder:text-(--color-gray)/80 text-sm transition-colors duration-200"
-              />
-
-              <button className="flex justify-center items-center gap-2 bg-(--color-cyan)/50 rounded-full disabled:opacity-60 px-8 py-3 hover:bg-(--color-cyan)  font-bold  text-sm hover:scale-[1.02] disabled:scale-100 transition-all duration-300 disabled:cursor-not-allowed text-(--primary-dark) cursor-pointer">
-                Subscribe
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* DIVIDER */}

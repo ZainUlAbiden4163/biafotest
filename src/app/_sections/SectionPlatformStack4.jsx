@@ -88,9 +88,6 @@ export default function SectionPlatformStack4() {
 
       {/* ── Header ── */}
       <div className="relative z-10 flex flex-col items-center gap-4 text-center max-w-3xl">
-        <span className="text-[#31d8d5] text-sm md:text-base font-semibold tracking-[0.2em] uppercase">
-          Platform Stack
-        </span>
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl leading-tight">
           The Biafo Multi-Layer{" "}
           <span className="text-[#31d8d5]">Healthcare Intelligence Platform</span>
@@ -436,27 +433,7 @@ export default function SectionPlatformStack4() {
         </p>
       </div>
 
-      {/* ── Bottom metrics strip ── */}
-      <div className="relative z-10 w-full max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-4">
-        {[
-          { value: "5", label: "Intelligence Layers" },
-          { value: "100%", label: "HIPAA / GDPR Compliant" },
-          { value: "∞", label: "Continuous Learning" },
-          { value: "1", label: "Unified Platform" },
-        ].map((stat) => (
-          <div
-            key={stat.label}
-            className="rounded-xl px-4 py-5 text-center space-y-1"
-            style={{
-              border: "1px solid rgba(49,216,213,0.18)",
-              background: "rgba(30,44,70,0.20)",
-            }}
-          >
-            <p className="text-[#31d8d5] font-bold text-2xl md:text-3xl">{stat.value}</p>
-            <p className="text-[#d1d7df] text-xs md:text-sm">{stat.label}</p>
-          </div>
-        ))}
-      </div>
+
 
       <style>{`
         @keyframes platformFadeIn {

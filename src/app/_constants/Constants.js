@@ -1,9 +1,9 @@
 export const navItems = [
-  { name: "About Us", id: 1, href: "/aboutus" },
+  { name: "About", id: 1, href: "/aboutus" },
   { name: "Platform", id: 2, href: "#platform-stack" },
   { name: "Solutions", id: 3, href: "/solutions" },
   { name: "Contact", id: 4, href: "/contactus" },
-  { name: "Career", id: 5, href: "/career" },
+  { name: "Careers", id: 5, href: "/career" },
 
 ];
 
@@ -12,19 +12,19 @@ export const problemsContent = [
     id: 1,
     heading: "10–15",
     label: "Years",
-    description: "to bring a single drug to market",
+    description: "Average time to bring a single drug to market",
   },
   {
     id: 2,
-    heading: "$2.6 B",
+    heading: "$2.6B",
     label: "Average Cost Per Drug",
-    description: "average R&D cost per approved drug",
+    description: "Average R&D cost per approved drug",
   },
   {
     id: 3,
     heading: "<11%",
     label: "Success Rate",
-    description: "of drug candidates ever reach patients",
+    description: "of drug candidates reach patients",
   },
 ];
 

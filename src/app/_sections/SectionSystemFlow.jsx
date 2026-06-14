@@ -18,7 +18,7 @@ function SectionSystemFlow() {
             <h1 className="rounded-full border border-1 border-(--color-cyan)/50 text-(--color-cyan) w-10 h-10 flex justify-center items-center text-base">1</h1>
             <div className=" w-[90%] bg-(--primary-light)/25 rounded-lg md:h-30 border-1 border-(--color-cyan)/50 p-4">
               <h2 className="text-(--color-cyan) font-bold mb-1">Patient:</h2>
-              <p>Source of truth clinical records, genomics, wearables, and real-world data.</p>
+              <p>Source of truth — clinical records, genomics, wearables, and real-world data.</p>
             </div>
           </div>
           <div className="h-10 w-[1px] bg-(--color-cyan)/50  ml-5 max-md:hidden "></div>

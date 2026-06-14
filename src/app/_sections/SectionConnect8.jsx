@@ -21,7 +21,7 @@ function SectionConnect8() {
           </h1>
         </div>
         <div className="w-2/3">
-          <p className="text-center">Biafo transforms healthcare data into predictive intelligence — powering diagnostics, digital twins, and virtual trials at scale. </p>
+          <p className="text-center">Biafo transforms fragmented healthcare data into a continuously learning intelligence layer that powers AI diagnostics, predictive models, patient digital twins, and virtual clinical trials. </p>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ function SectionConnect8() {
           href="#platform-stack"
           className="bg-(--color-secondary-btn) px-1.5 md:px-4 py-1 md:py-2 rounded-full  cursor-pointer flex gap-1 items-center border border-(--color-gray)"
         >
-          Explore platform <GoArrowRight />
+          Partner with Biafo <GoArrowRight />
         </a>
       </div>
     </section>

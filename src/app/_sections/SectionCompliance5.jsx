@@ -58,7 +58,7 @@ function SectionCompliance5() {
           </div>
         </div>
         <div className="w-2/3 m-auto">
-          <p className="text-center max-md:text-base md:text-xl text-(--color-cyan)">This layer underpins every part of the Biafo platform — ensuring trust is embedded, not added. </p>
+          <p className="text-center max-md:text-base md:text-xl text-(--color-cyan)">Trust is not a feature added to the Biafo platform. It is the foundation every layer is built on.</p>
         </div>
       </main>
     </section>

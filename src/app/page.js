@@ -19,7 +19,7 @@ export default function Home() {
       <SectionProblem1 />
       <SectionSystemFlow />
       <SectionPlatformStack4 />
-      <SectionPillars3 />
+      {/* <SectionPillars3 /> */}
       <SectionCompliance5 />
       <SectionFaq6 />
       <SectionConnect8 />
