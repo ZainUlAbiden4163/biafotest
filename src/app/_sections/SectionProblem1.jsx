@@ -11,20 +11,14 @@ function SectionProblem1() {
     >
       <main className="flex flex-col gap-20">
         <div className="space-y-6 text-center">
-          <div className="  md:font-medium md:text-xl text-(--color-cyan) inline-block">
-            <p>The Problem We Exist to Solve</p>
-          </div>
+
           <div className="m-auto w-fit">
             <h1 className="inline-block font-bold text-3xl md:text-4xl lg:text-5xl">
               Healthcare Doesn't Lack Data. It Lacks Intelligence Infrastructure.{" "}
             </h1>
           </div>
 
-          <div className="m-auto w-fit">
-            <h1 className="text-(--color-cyan) font-bold text-3xl md:text-4xl lg:text-5xl">
-              Here&apos;s Why It Must Change.
-            </h1>
-          </div>
+
         </div>
         <div className="gap-4 grid grid-cols-1 md:grid-cols-3 m-auto w-full">
           {problemsContent.map((el) => (

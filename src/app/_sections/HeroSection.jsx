@@ -23,7 +23,7 @@ function HeroSection() {
         <div className="flex flex-col justify-center items-center lg:items-start gap-6 order-1 lg:order-1 bg-black/20 px-4 py-10 rounded-4xl w-fit">
           <div className="flex flex-col max-md:text-center">
             <h2 className="md:font-medium md:text-xl text-(--color-cyan) inline-block mx-auto mb-10 px-4 rounded-4xl bg-(--primary-dark)/20">
-              Healthcare Intelligence platform
+              Healthcare Intelligence Platform
             </h2>
             <h1 className="font-bold text-(--color-offWhite) text-3xl md:text-4xl xl:text-6xl">
               Building the Healthcare<br /> Intelligence<br /> Infrastructure Layer
@@ -41,7 +41,7 @@ function HeroSection() {
 
             <p className="max-w-prose text-white text-base md:text-xl max-md:text-center">
               Biafo transforms fragmented patient data into predictive models, digital twins, and virtual clinical trials
-              on a secure, compliant foundation.
+              on a secure, compliant, auditable foundation.
             </p>
             <p className="max-w-prose text-white text-base md:text-xl max-md:text-center">
               Built for regulated healthcare environments and designed to scale from diagnostics to clinical research
@@ -62,7 +62,7 @@ function HeroSection() {
               href="#platform-stack"
               className="bg-(--color-secondary-btn) px-1.5 md:px-4 py-1 md:py-2 rounded-full text-(--color-offWhite) cursor-pointer flex gap-1 items-center border border-(--color-gray)"
             >
-              Explore platform <GoArrowRight />
+              Explore Platform <GoArrowRight />
             </a>
           </div>
         </div>

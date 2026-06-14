@@ -136,7 +136,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link href="/contact">
-                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Terms</p>
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Terms of Services</p>
                   </Link>
                 </li>
 

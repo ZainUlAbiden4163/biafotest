@@ -24,7 +24,7 @@ export const problemsContent = [
     id: 3,
     heading: "<11%",
     label: "Success Rate",
-    description: "of drug candidates reach patients",
+    description: "Of drug candidates reach patients",
   },
 ];
 

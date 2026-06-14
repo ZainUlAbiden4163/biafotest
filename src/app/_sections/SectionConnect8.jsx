@@ -30,7 +30,7 @@ function SectionConnect8() {
           href="/contactus"
           className="bg-(--color-cyan) px-1.5 md:px-4 py-1 md:py-2 rounded-full cursor-pointer border border-(--color-cyan) text-(--primary-dark)"
         >
-          Request early access
+          Request Early Access
         </a>
 
         <a
