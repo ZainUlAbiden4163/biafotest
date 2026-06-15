@@ -35,7 +35,7 @@ function AboutUsPage() {
                 <h2 className="text-center  font-bold text-2xl md:text-3xl lg:text-4xl text-(--color-cyan)">Platform Foundation</h2>
                 <div className="">
                     <div className="">
-                        <div className="flex gap-6 text-xl" >
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xl max-lg:gap-5" >
                             <div className="flex flex-col gap-2 px-8 py-6 border-(--color-cyan) border-1 rounded-2xl">
                                 <h3 className="text-(--color-cyan) font-bold text-2xl">Regulated Healthcare</h3>
                                 <p>Built for strict compliance with global healthcare data standards, ensuring data integrity, security, and full auditability across every layer of the platform.</p>
