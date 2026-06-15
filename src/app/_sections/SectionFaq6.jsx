@@ -49,7 +49,7 @@ function SectionFaq6() {
         <p className=" -mt-10 text-white/50 text-base text-center">
           Still have questions?{" "}
           <a
-            href="#contact"
+            href="/contactus"
             className="text-(--color-highlight) hover:underline underline-offset-4 transition-all"
           >
             Contact us
