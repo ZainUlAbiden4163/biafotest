@@ -14,39 +14,45 @@ function getClipPath(i) {
 const LAYERS = [
   {
     id: 1,
-    label: "Virtual",
-    label2: "Trials",
+    label: "Virtual Trials",
+    pyramid1: "Virtual",
+    pyramid2: "Trials",
     sublabel: "Layer 1 — Top",
     description:
-      "Accelerated, compliant clinical trials run on synthetic and real cohorts — dramatically compressing timelines and cost while maintaining regulatory integrity.",
+      "Compliant clinical trials powered by synthetic and real-world cohorts reduce timelines and costs without compromising regulatory standards.",
   },
   {
     id: 2,
     label: "Digital Twins",
+    pyramid1: "Digital Twins",
     sublabel: "Layer 2",
     description:
-      "Living simulations of individual patients powered by predictive models, enabling truly personalized intervention before any treatment is applied.",
+      "Patient-specific simulations powered by predictive models, enabling personalized intervention before treatment.",
   },
   {
     id: 3,
     label: "Predictive Modeling",
+    pyramid1: "Predictive Modeling",
     sublabel: "Layer 3",
     description:
-      "Forward-looking intelligence built on continuously learning models that transform raw patient data into actionable clinical insights.",
+      "Continuously learning models that convert patient data into forward-looking, actionable clinical insights.",
   },
   {
     id: 4,
     label: "Data Aggregation",
+    pyramid1: "Data Aggregation",
     sublabel: "Layer 4",
     description:
-      "Aggregated, normalised, and secured across institutional boundaries — a unified data substrate that powers every intelligence layer above it.",
+      "Securely aggregated and normalized data across institutional boundaries, forming a unified substrate for downstream intelligence.",
   },
   {
     id: 5,
     label: "AI Diagnostics",
+    pyramid1: "AI Diagnostics",
+
     sublabel: "Layer 5 — Base",
     description:
-      "Intelligent pattern recognition across multimodal patient data streams, enabling early and accurate diagnosis at population scale.",
+      "Intelligent pattern recognition across multimodal patient data enabling early, accurate diagnosis at population scale.",
   },
 ];
 
@@ -139,8 +145,9 @@ export default function SectionPlatformStack4() {
                       }}
                       className="text-sm md:text-base font-semibold whitespace-nowrap flex flex-col mt-5"
                     >
-                      <span className="text-sm md:font-medium">{layer.label}</span>
-                      {layer.label2 && <span className="md:font-normal text-sm md:text-base opacity-90"> {layer.label2}</span>}
+                      {/* {layer.label1} */}
+                      <span className="text-sm md:font-medium">{layer.pyramid1}</span>
+                      {layer.pyramid2 && <span className="md:font-normal text-sm md:text-base opacity-90"> {layer.pyramid2}</span>}
                     </span>
                   )}
                 </div>
@@ -162,9 +169,7 @@ export default function SectionPlatformStack4() {
             <line x1="10" y1="80" x2="90" y2="80" stroke="rgba(49,216,213,0.28)" strokeWidth="0.3" />
           </svg>
         </div>
-        <p className="text-[#31d8d5]/40 text-[11px] tracking-[0.18em] uppercase mt-1">
-          ▲ Foundation — Base of the Intelligence Stack
-        </p>
+
       </div>
 
       {/* ── Desktop interaction hint ── */}
@@ -419,9 +424,7 @@ export default function SectionPlatformStack4() {
       {/* ── 3 Supporting Paragraphs ── */}
       <div className="relative z-10 w-full max-w-3xl flex flex-col gap-6 text-[#d1d7df] text-base md:text-lg leading-relaxed">
         <p>
-          Each layer reinforces the next — creating a compounding system where data improves{" "}
-          <span className="text-[#f5f7fa] font-semibold underline underline-offset-4 decoration-[#31d8d5]/40">models</span>,
-          models power simulations, and simulations accelerate discovery.
+          Each layer reinforces the next, creating a compounding system where data improves models, models power simulations, and simulations accelerate discovery. what changed
         </p>
         <p>
           As the dataset grows,{" "}

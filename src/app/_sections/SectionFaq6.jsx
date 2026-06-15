@@ -27,8 +27,7 @@ function SectionFaq6() {
           </h2>
 
           <p className=" text-(--color-gray) text-sm md:text-base">
-            Everything you need to know about Biafo&apos;s platform, privacy,
-            and partnerships.
+            Everything you need to know about how Biafo transforms patient data into predictive intelligence, from raw clinical records to virtual clinical trials.
           </p>
         </div>
 

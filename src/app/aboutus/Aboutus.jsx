@@ -53,7 +53,7 @@ function AboutUsPage() {
                 </div>
             </div>
 
-            <main className="space-y-4 lg:space-y-8">
+            {/* <main className="space-y-4 lg:space-y-8">
                 <div className="gap-10 grid grid-cols-1 lg:grid-cols-[49%_49%]">
                     <div className="relative px-4 w-full lg:h-120 max-lg:h-70">
                         <Image
@@ -96,8 +96,10 @@ function AboutUsPage() {
                         </p>
                     </div>
                 </div>
-            </main>
-
+            </main> */}
+            <div className="w-2/3 m-auto mt-20">
+                <p className="text-center max-md:text-base md:text-xl text-(--color-cyan)">A layered system where infrastructure enables scale, scale enables prediction, and prediction improves outcomes.</p>
+            </div>
         </section>
     );
 }

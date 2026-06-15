@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", id: 1, href: "/aboutus" },
-  { name: "Platform", id: 2, href: "#platform-stack" },
+  { name: "Platform", id: 2, href: "/#platform-stack" },
   { name: "Solutions", id: 3, href: "/solutions" },
   { name: "Contact", id: 4, href: "/contactus" },
   { name: "Careers", id: 5, href: "/career" },
@@ -79,6 +79,60 @@ export const FAQS = [
   },
   {
     id: 5,
+    question: "How can my organization partner with Biafo?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 6,
+    question: "What is Biafo building?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 7,
+    question: "Who is Biafo built for?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 8,
+    question: "What problem does Biafo solve?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 9,
+    question: "How does Biafo collect and unify patient data from fragmented healthcare sources?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 10,
+    question: "What does Biafo's AI Diagnostics layer do, and how is it different from traditional diagnostic tools?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 11,
+    question: "How does Biafo aggregate and protect sensitive patient data across institutional boundaries?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 12,
+    question: "What are Digital Twins, and how does Biafo use them for personalized medicine?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 13,
+    question: "How do Virtual Trials work on the Biafo platform, and why are they faster than traditional clinical trials?",
+    answer:
+      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+  },
+  {
+    id: 14,
     question: "How can my organization partner with Biafo?",
     answer:
       "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
