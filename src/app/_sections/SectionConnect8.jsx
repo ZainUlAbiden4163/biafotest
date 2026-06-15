@@ -34,7 +34,7 @@ function SectionConnect8() {
         </a>
 
         <a
-          href="#platform-stack"
+          href="/contactus"
           className="bg-(--color-secondary-btn) px-1.5 md:px-4 py-1 md:py-2 rounded-full  cursor-pointer flex gap-1 items-center border border-(--color-gray)"
         >
           Partner with Biafo <GoArrowRight />

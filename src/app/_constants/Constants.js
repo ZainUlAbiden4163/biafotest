@@ -37,14 +37,14 @@ export const pillarsContent = [
       "Our AI analyzes genetic, molecular, and clinical data to identify disease earlier, improve predictive accuracy, and support treatment plans designed for the individual rather than a population average.",
   },
   {
-    id: 1,
+    id: 2,
     icon: "",
     heading: "Blockchain Data Security",
     content:
       "Your health data belongs to you. Biafo uses blockchain technology to ensure health records remain secure, transparent, and patient-controlled. You decide who accesses your data and for what purpose, enabling ethical research without compromising privacy.",
   },
   {
-    id: 1,
+    id: 3,
     icon: "",
     heading: "Digital Twin Simulation",
     content:
@@ -57,85 +57,49 @@ export const FAQS = [
     id: 1,
     question: "What is Biafo building?",
     answer:
-      "Biafo is building an AI healthcare platform that combines personalized diagnostics, secure health data infrastructure, and digital twin technology to support predictive, data-driven healthcare.  ",
+      "Biafo is building the healthcare intelligence infrastructure layer a platform that transforms fragmented patient data into predictive models, digital twins, and virtual trials, secured by a compliant, auditable foundation. It connects five compounding capabilities: AI Diagnostics, Data Aggregation, Predictive Modeling, Digital Twins, and Virtual Trials, all sitting on a blockchain-backed compliance layer. As each layer scales, it makes the next more powerful improving the speed and economics of drug discovery and clinical care",
   },
   {
     id: 2,
-    question: "How does Biafo protect patient data?",
+    question: "Who is Biafo built for?",
     answer:
-      "Biafo protects patient data through secure infrastructure, strong governance frameworks, and privacy-first system design. Patients remain in control of how their data is accessed and used.",
+      " Biafo serves healthcare providers who need actionable intelligence from patient data, researchers who require secure cross-institutional data access, and pharmaceutical organizations looking to reduce the time and cost of clinical development. Biafo is designed to sit beneath your existing systems as the intelligence layer that makes them smarter.",
   },
   {
     id: 3,
-    question: "Who benefits from Biafo's platform?",
+    question: "How does Biafo collect and unify patient data?",
     answer:
-      "Patients, clinicians, researchers, and pharmaceutical companies benefit through better data access, predictive insights, and advanced healthcare decision tools.  ",
+      "Biafo collects data from clinical records, genomic profiles, wearables, and other healthcare sources, then unifies it into one secure system. It normalizes, de-identifies, and protects data in compliance with HIPAA, GDPR, and HL7 FHIR without requiring source systems to standardize first.",
   },
   {
     id: 4,
-    question: "What types of diagnostics does Biafo support?",
+    question: "What does Biafo's AI Diagnostics layer do?",
     answer:
-      "We currently support symptom-based AI assessment, lab report analysis, and medical imaging insights (X-rays, MRIs). Our platform is continuously expanding to cover more diagnostic categories.",
+      "Biafo's AI Diagnostics layer applies intelligent pattern recognition across multimodal data streams simultaneously clinical records, imaging signals, genomic markers, and wearable outputs. Unlike point-in-time tools, it operates continuously across the full data foundation, enabling clinicians and researchers to intervene earlier and with greater precision.",
   },
   {
     id: 5,
-    question: "How can my organization partner with Biafo?",
+    question: "How does Biafo protect sensitive patient data across institutional boundaries?",
     answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+      "All data is aggregated and secured across a blockchain-anchored foundation where every access event is immutable and auditable. Biafo enables permissioned data exchange across providers, researchers, and pharmaceutical partners without ever exposing raw patient records. Institutions retain full control over what is shared, with whom, and under what conditions. Built to meet HIPAA, GDPR, and HL7 FHIR requirements from the ground up.",
   },
   {
     id: 6,
-    question: "What is Biafo building?",
+    question: "What are Digital Twins and how does Biafo use them?",
     answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+      "A Digital Twin on the Biafo platform is a living simulation of an individual patient, built from their clinical history, genomic profile, wearable data, and real-world signals. As new data flows in, the model updates in real time allowing clinicians and researchers to simulate how a patient might respond to a therapy or intervention before any clinical decision is made.",
   },
   {
     id: 7,
-    question: "Who is Biafo built for?",
+    question: "How do Virtual Trials work on the Biafo platform?",
     answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+      "Biafo's Virtual Trials layer allows pharmaceutical and research organizations to test treatments faster using real and AI-generated patient cohorts. It simulates drug responses, identifies safety issues early, and helps select the right patients for studies by reducing the time, cost, and complexity of traditional clinical trials.",
   },
   {
     id: 8,
-    question: "What problem does Biafo solve?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 9,
-    question: "How does Biafo collect and unify patient data from fragmented healthcare sources?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 10,
-    question: "What does Biafo's AI Diagnostics layer do, and how is it different from traditional diagnostic tools?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 11,
-    question: "How does Biafo aggregate and protect sensitive patient data across institutional boundaries?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 12,
-    question: "What are Digital Twins, and how does Biafo use them for personalized medicine?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 13,
-    question: "How do Virtual Trials work on the Biafo platform, and why are they faster than traditional clinical trials?",
-    answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
-  },
-  {
-    id: 14,
     question: "How can my organization partner with Biafo?",
     answer:
-      "We welcome partnerships with healthcare providers, research institutions, and technology companies. Reach out via our partnerships page and our team will get back to you within 48 hours to explore collaboration opportunities.",
+      "Biafo works with healthcare providers, research institutions, and pharmaceutical organizations. Whether you're interested in data collaboration, platform access, or a deeper integration partnership, reach out via our contact page and our team will respond within 24 hours.",
   },
 ];
 

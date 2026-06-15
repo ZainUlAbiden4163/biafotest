@@ -72,17 +72,17 @@ function Footer() {
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about">
+                  <Link href="/aboutus">
                     <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">About</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <Link href="/#platform-stack">
                     <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Platform</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy">
+                  <Link href="/contactus">
                     <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Contact</p>
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ function Footer() {
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Solutions</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/about">
+                  <Link href="/">
                     <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">AI Diagnostics</p>
                   </Link>
                 </li>
