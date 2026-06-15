@@ -51,7 +51,7 @@ function Footer() {
           </div>
 
           {/* Links */}
-          <div className="lg:col-span-4 grid lg:grid-cols-4 grid-cols-1 gap-8">
+          <div className="lg:col-span-4 grid lg:grid-cols-4 grid-cols-1 gap-45">
             {/* {Object.entries(FOOTER_LINKS).map(([category, links], colIdx) => (
               <div key={category}>
                 <ul className="flex gap-3">
