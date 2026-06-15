@@ -31,10 +31,10 @@ function Footer() {
               />
             </div>
 
-            <p className="mb-6 max-w-xs text-white/50 text-sm leading-relaxed">
+            {/* <p className="mb-6 max-w-xs text-white/50 text-sm leading-relaxed">
               Moving healthcare from reactive practice to predictive precision
               through AI, blockchain, and digital twins.
-            </p>
+            </p> */}
 
             <div className="flex items-center gap-3">
               {SOCIALS.map((s) => (
@@ -136,7 +136,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link href="/contact">
-                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Terms of Services</p>
+                    <p className="text-sm text-white/30 hover:text-white transition-all duration-300 cursor-pointer">Terms of Service</p>
                   </Link>
                 </li>
 
@@ -148,10 +148,10 @@ function Footer() {
         </div>
 
         {/* DIVIDER */}
-        <div className="bg-linear-to-r from-transparent via-white/15 to-transparent mb-8 w-full h-px" />
+        {/* <div className="bg-linear-to-r from-transparent via-white/15 to-transparent mb-8 w-full h-px" /> */}
 
         {/* CERTIFICATIONS */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8">
+        {/* <div className="flex flex-wrap justify-center gap-3 mb-8">
           {CERTIFICATIONS.map((cert) => (
             <div
               key={cert.label}
@@ -162,7 +162,7 @@ function Footer() {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* DIVIDER */}
         <div className="bg-linear-to-r from-transparent via-white/10 to-transparent mb-6 w-full h-px" />
