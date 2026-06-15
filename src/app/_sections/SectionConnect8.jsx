@@ -21,7 +21,7 @@ function SectionConnect8() {
           </h1>
         </div>
         <div className="w-2/3">
-          <p className="text-center">Biafo transforms fragmented healthcare data into a continuously learning intelligence layer that powers AI diagnostics, predictive models, patient digital twins, and virtual clinical trials. </p>
+          <p className="text-center">Biafo transforms fragmented healthcare data into a continuously learning intelligence layer that powers AI diagnostics, predictive models, patient digital twins, and virtual trials. </p>
         </div>
       </div>
 

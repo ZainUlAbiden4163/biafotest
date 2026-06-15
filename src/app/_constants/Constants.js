@@ -10,9 +10,9 @@ export const navItems = [
 export const problemsContent = [
   {
     id: 1,
-    heading: "10–15",
-    label: "Years",
-    description: "Average time to bring a single drug to market",
+    heading: "10–15 Years",
+    label: "Average",
+    description: "Time to bring a single drug to market",
   },
   {
     id: 2,

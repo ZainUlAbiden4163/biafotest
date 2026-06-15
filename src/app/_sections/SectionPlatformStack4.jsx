@@ -94,7 +94,7 @@ export default function SectionPlatformStack4() {
         </h1>
         <p className="text-[#d1d7df] text-base md:text-lg max-w-2xl leading-relaxed">
           A purpose-built layered architecture for institutional scale, designed to compound through
-          diagnostics, predictive modeling, digital twins, and virtual clinical trials.
+          diagnostics, predictive modeling, digital twins, and virtual trials.
         </p>
       </div>
 

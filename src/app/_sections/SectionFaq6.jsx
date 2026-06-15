@@ -47,7 +47,7 @@ function SectionFaq6() {
 
         {/* Bottom note */}
 
-        <p className="text-white/30 text-sm text-center">
+        <p className=" -mt-10 text-white/50 text-base text-center">
           Still have questions?{" "}
           <a
             href="#contact"

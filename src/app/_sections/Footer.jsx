@@ -68,7 +68,7 @@ function Footer() {
                 </ul>
               </div>
             ))} */}
-            <div className="">
+            <div className="lg:w-40 w-full">
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Company</h3>
               <ul className="space-y-2">
                 <li>
@@ -89,7 +89,7 @@ function Footer() {
 
               </ul>
             </div>
-            <div className="">
+            <div className="lg:w-40 w-full">
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Solutions</h3>
               <ul className="space-y-2">
                 <li>
@@ -110,7 +110,7 @@ function Footer() {
 
               </ul>
             </div>
-            <div className="">
+            <div className="lg:w-40 w-full">
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Resources</h3>
               <ul className="space-y-2">
                 <li>
@@ -126,7 +126,7 @@ function Footer() {
 
               </ul>
             </div>
-            <div className="">
+            <div className="lg:w-40 w-full">
               <h3 className="mb-3 font-bold text-white/40 text-xs uppercase tracking-widest">Legal</h3>
               <ul className="space-y-2">
                 <li>
